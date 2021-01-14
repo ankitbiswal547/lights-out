@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+.register {
+    background-color: rgb(22, 22, 22);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.register-heading {
+    font-family: 'Julius Sans One', sans-serif;
+    color: lime;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.input-fields {
+    width: 90%;
+    color: white;
+    background-color: black;
+    border: none;
+    border-bottom: 2px solid lime;
+    padding: 15px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    text-align: center;
+    margin: 0.4em 0;
+}
+
+.input-fields:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(58, 94, 255);
+}
+.input-fields:hover {
+    border: none;
+    border-bottom: 2px solid rgb(58, 94, 255);
+}
+
+.input-fields::placeholder {
+    color: rgb(184, 184, 184);
+}
+
+.submit-btn {
+    background-color: #343434;
+    margin-top: 1em;
+    border: none;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    outline: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+} 
+
+.submit-btn:hover {
+    background-color: #424242;
+}
+
+.submit-btn:active {
+    background-color: lime;
+}
+
+.submit-btn:disabled {
+    cursor: not-allowed;
+}
+
+.warning {
+    color: rgb(255, 0, 0);
+    font-family: 'Redressed', cursive;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+@media(min-width:500px) {
+    .input-fields {
+        width: 70%;
+    }
+}

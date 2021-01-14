@@ -1,0 +1,59 @@
+.image-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 150px;
+}
+
+.welcome-heading {
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.welcome-page-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.instruction-btn {
+    background-color: cornflowerblue;
+    padding: 0.5em 1em;
+    width: 150px;
+    letter-spacing: 0.05em;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 30px auto;
+    border-radius: 4px;
+    text-align: center;
+}
+.owner {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.owner-name {
+    color: cornflowerblue;
+    /* font-family: neon; */
+    font-family: 'Monoton', cursive;
+    font-size: 1em;
+    display: block;
+}
+
+@media(min-width: 500px) {
+    .image {
+        width: 210px;
+    }
+    .owner-name {
+        font-size: 1.5em;
+        margin-left: 15px;
+        display: inline;
+    }
+}

@@ -1,0 +1,9 @@
+<div class="register">
+    <h1 class="register-heading" >Register To Proceed</h1>
+    <form autocomplete="off" spellcheck="false" class="register-form" (ngSubmit)="onSubmit()" #f="ngForm" >
+        <input class="input-fields" ngModel required type="text" name="userName" placeholder="Player Name">
+        <input class="input-fields" ngModel required type="text" name="branch" placeholder="Branch">
+        <input class="submit-btn" type="submit" value="Register" [disabled]="isDisabled()" >
+        <p class="warning" *ngIf="warningState === true">* Please Fill both the fields</p>
+    </form>
+</div>

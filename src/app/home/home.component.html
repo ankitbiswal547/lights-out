@@ -1,0 +1,40 @@
+<div *ngIf="matchSituation === 'running'" >
+  <h1 class="title" ><span class="l">L</span><span class="i">i</span><span class="g">g</span><span class="h">h</span><span class="t">t</span><span class="s">s</span> <span class="o">O</span><span class="u">u</span><span class="t">t</span></h1>
+  <!-- <h3 class="title" >{{userDetails.userName}} IS IN</h3> -->
+  <div class="container">
+    <mat-grid-list class="card" cols="5">
+      <mat-grid-tile 
+      *ngFor="let num of replicaArr" 
+      [ngClass]="{blue: num.value === true}"
+      (click)="onCLick(num.value, num.i, num.j)">
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div class="btn-groups">
+    <button class="restart-btn" (click)="restartGame()" >New Game</button>
+    <button class="end-btn" (click)="endGame()">End Game</button>
+  </div>
+</div>
+
+<div class="you-win-container" *ngIf="matchSituation === 'won'" >
+  <!-- <div class="svg" id="svg"></div> -->
+  <div class="you-win-tag" >
+    <div class="neon">You </div>
+    <div class="flux">Win!</div>
+  </div>
+  <div class="game-moves" >
+    {{userDetails.userName}}, you completed the game with <div class="neon" >{{myMoves}}</div> moves. Wait for the orientation to know if you top the leader board.
+  </div>
+  <div class="play-again-btn">
+    <button class="play-again" (click)="playAgain()">Play Again</button>
+  </div>
+</div>
+
+<div *ngIf="matchSituation === 'end-game'">
+  <h1 class="end-game-message" >Lights are still 'ON', But you are 'OFF' now.</h1>
+  <p class="encouragement" >Better Luck Next Time</p>
+  <div class="play-again-btn">
+    <button class="play-again" (click)="playAgain()">Play Again?</button>
+  </div>
+</div>

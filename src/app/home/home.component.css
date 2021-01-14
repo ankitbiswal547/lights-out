@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+
+.title {
+    /* font-family: neon; */
+    font-family: 'Monoton', cursive;
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-size: 2.7em;
+    margin: 0 auto 30px;
+    color: blueviolet;
+    text-align: center;
+}
+
+.timer {
+    color: white;
+}
+
+.l {
+    color: orangered;
+}
+.i {
+    color: lime;
+}
+.g {
+    color: rgb(255, 72, 102);
+}
+
+.h {
+    color: rgb(218, 20, 218);
+}
+.t {
+    color: rgb(215, 218, 20);
+}
+
+.o {
+    margin-left: 10px;
+    color: royalblue;
+}
+.u {
+    color: rgb(64, 184, 116);
+}
+
+.status {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container {
+    padding: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 15px 79px -62px lime, 0 -36px 75px -48px salmon, 38px 0 100px -47px slateblue, -19px 0 138px -56px yellow;
+}
+mat-grid-tile {
+    background: #2c2c2c;
+}
+
+.blue {
+    background-color: #9765F4;
+}
+.btn-groups {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.restart-btn, .end-btn {
+    border: none;
+    width: 140px;
+    padding: 0.6em 1.5em;
+    font-size: 1em;
+    border-radius: 0.2em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+.restart-btn:focus, .end-btn:focus {
+    outline: none;
+}
+.restart-btn {
+    background-color: lime;
+    color: white;
+    margin-right: 5px;
+}
+.restart-btn:hover {
+    background-color: rgb(51, 255, 51);
+}
+.end-btn {
+    background-color: white;
+    margin-left: 5px;
+}
+
+@media(min-width: 500px) {
+    .title {
+        font-size: 4.5em;
+    }
+    .container {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+.you-win-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.you-win-tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-moves {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-family: 'Redressed', cursive;
+}
+.play-again-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.play-again {
+    border: none;
+    padding: 0.5em 1em;
+    width: 150px;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(228, 138, 138);
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+.play-again:hover {
+    background-color: rgb(255, 176, 176);
+}
+
+.play-again:focus {
+    outline: none;
+}
+
+.neon {
+    /* font-family: neon; */
+    font-family: 'Monoton', cursive;
+    color: #FB4264;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35;
+    margin-right: 5px;
+}
+  
+.flux {
+    /* font-family: neon; */
+    font-family: 'Monoton', cursive;
+    color: #426DFB;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+    margin-left: 5px;
+}
+  
+.neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+  
+@keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+    }
+}
+  
+.flux {
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+}
+  
+@keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.end-game-message {
+    /* font-family: neon; */
+    font-family: 'Monoton', cursive;
+    color: #59ff00;
+    text-align: center;
+    font-size: 3em;
+}
+.encouragement {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Redressed', cursive;
+}
+
+@media(min-width: 500px) {
+    .end-game-message {
+        font-size: 5em;
+    }
+    .encouragement {
+        font-size: 2em;
+    }
+
+    .game-moves {
+        font-size: 2em;
+    }
+}
